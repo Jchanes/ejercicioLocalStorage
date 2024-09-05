@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+     <link rel="stylesheet" href="/css/style.css">
+     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <title>Inicio</title>
 </head>
 <body>
-    
+
+    <!-- alerta de nombre no valido -->
+     <br><br>
+    <div class="alert alert-danger fade show container col-4" style="display: none;" role="alert" id="alertaRoja">
+        <p id="alertaRoja"></p>
+      </div>    <!-- alerta de nombre no valido -->
+
+
+
+    <main class="container col-6">
+        <br>
+        <br>
+        <form class="input-group row justify-content-center needs-validation" novalidate>
+            <!-- label nombre -->
+            <span class="input-group-text col-3">Nombre: </span>
+
+            <!-- input nombre -->
+            <input id="Name" type="text" aria-label="Name" class="form-control col-3" id="Name" placeholder="Ingrese su nombre por favor" required autofocus>
+
+            <div class="invalid-feedback">
+                Nombre no valido, por favor ingrese un nombre valido
+            </div>
+
+            <!-- boton -->
+            <span class="col-3" id="btnGuardar"><button>Guardar</button></span>
+        </form>
+        <br>
+        <div class="row justify-content-center">
+            <br>
+            <a href="/html/welcome.html" class="col-3">Pagina welcome</a>
+        </div>
+    </main>
+
+
+    <script src="/js/main.js"></script>
 </body>
 </html>
